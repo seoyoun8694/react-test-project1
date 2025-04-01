@@ -1,21 +1,28 @@
-.main_img_div {
+.main_div {
+    margin: 15px;
+}
+
+.main_fir {
+    position: relative;
     width: 100%;
     height: 885px;
+}
+
+.main_img_div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     border-radius: 1vw;
     border-top-left-radius: 5vw;
     border-bottom-right-radius: 5vw;
     transition: all 1s;
-}
-
-.main_div {
-    margin: 15px;
-    position: relative;
+    z-index: 1;
 }
 
 .vnext, .vprev {
-    width: 27px;
-    height: 15px;
     cursor: pointer;
     margin: 80px;
 }
@@ -32,14 +39,69 @@
     gap: 15px;
     width: 100%;
     position: absolute;
-    bottom: 50px;
+    bottom: 5%;
+    z-index: 2;
 }
 
 .main_img_textbox {
     display: flex;
     position: absolute;
-    top: 15vw;
-    margin-left: 5vh;
+    flex-direction: column;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.main_sec {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mina_sec_cardbox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 150px;
+    gap: 20px
+}
+
+.main_sec_cardImg {
+    width: 32vw;
+    height: 600px;
+    background-size: cover;
+    border-radius: 1vw;
+    border-top-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.main_sec_cardImgText_hover {
+    opacity: 0;
+}
+
+.main_sec_cardImg:hover {
+    opacity: 1;
+    width: 45vw;
+}
+
+.main_sec_cardImg:hover .main_sec_cardImgText_hover {
+    opacity: 1;
+}
+
+.mina_sec_cardbox:hover .main_sec_cardImg:not(:hover) {
+    width: 25vw;
 }
 
 t1 {
@@ -50,6 +112,36 @@ t1 {
 
 t2 {
     font-weight: normal;
+    font-size: 2rem;
+    color: white;
+}
+
+
+t3 {
+    font-weight: normal;
     font-size: 1.5rem;
     color: white;
+}
+
+t4 {
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 20px;
+}
+
+t5 {
+    font-weight: normal;
+    font-size: 1rem;
+    color: black;
+}
+
+hrr {
+    background-color: white;
+    opacity: 0.5;
+    width: 300px;
+    height: 5px;
+    border-radius: 1vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
