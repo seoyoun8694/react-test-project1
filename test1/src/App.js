@@ -51,7 +51,9 @@ function App() {
                     <img src={vnext} alt="Next" className="vnext" onClick={nextImage} />
                 </div>
                 <div className="main_img_textbox">
+
                     <t1>LG CSN AM INSPIRE CAMP<br /></t1>
+
                     <t1>APPLICATION-MODERNIZATION</t1>
                     <hrr />
                     <t3>
@@ -64,59 +66,65 @@ function App() {
             </div>
 
             <div className="main_sec">
-                <t1 style={{ color: "rgb(15, 63, 15)" }}>
-                    LG CSN AM INSPIRE CAMP를 소개합니다.</t1>
+                <t1 className="highlight-text">
+                    LG CSN AM INSPIRE CAMP 를 소개합니다.
+                </t1>
                 <t2 style={{ color: "rgb(15, 63, 15)", padding: "30px" }}>
                     LG CNS의 SW, AM 노하우를 그대로 적용한<br />
                     주니어 개발자/클라우드 엔지니어 양성과정
                 </t2>
 
+                <hrr style={{backgroundColor: "rgb(15, 63, 15,0.3)"}}/>
+
                 <div className="mina_sec_cardbox">
                     <div className="main_sec_cardImg" style={{ backgroundImage: `url(${main_secImg1})` }}>
                         <div className="main_sec_cardImgText">
-                            <t3 style={{ padding: "10px 20px" }}>LG CNS Agile</t3>
+                            <t3 style={{ padding: "10px" }}>LG CNS Agile</t3>
                             <t4>
                                 애플리케이션 현대화를 위한<br />
                                 프로젝트 관리 및 협업 방법
                             </t4>
                         </div>
                         <div className="main_sec_cardImgText_hover">
-                            <t3 style={{ padding: "10px 20px" }}>주요 내용</t3>
-                            <t4>LG CNS의 특화된 AM Agile 문화 학습</t4>
-                            <t4>Communication Skill 향상 및 업무 협업 학습</t4>
+                            <t3 style={{ padding: "10px 70px" }}>주요 내용</t3>
+                            <t4 style={{ padding: "0px 70px" }}>LG CNS의 특화된 AM Agile 문화 학습</t4>
+                            <t4 style={{ padding: "0px 70px" }}>Communication Skill 향상 및 업무 협업 학습</t4>
                         </div>
                     </div>
                     <div className="main_sec_cardImg" style={{ backgroundImage: `url(${main_secImg2})` }}>
                         <div className="main_sec_cardImgText">
-                            <t3 style={{ padding: "10px 20px" }}>Full Stack</t3>
+                            <t3 style={{ padding: "10px" }}>Full Stack</t3>
                             <t4>
                                 사용자 경험을 완성하는<br />
                                 프로그래밍의 모든 것
                             </t4>
                         </div>
                         <div className="main_sec_cardImgText_hover">
-                            <t3 style={{ padding: "10px 20px" }}>주요 내용</t3>
-                            <t4>현업에서 바로 활용 가능한 프로그래밍 기술 집합</t4>
-                            <t4>사용자 경험(UX)과 인터페이스(UI) 설계 및 구현 방법 학습</t4>
+                            <t3 style={{ padding: "10px 70px" }}>주요 내용</t3>
+                            <t4 style={{ padding: "0px 70px" }}>현업에서 바로 활용 가능한 프로그래밍 기술 집합</t4>
+                            <t4 style={{ padding: "0px 70px" }}>사용자 경험(UX)과 인터페이스(UI) 설계 및 구현 방법 학습</t4>
                         </div>
                     </div>
                     <div className="main_sec_cardImg" style={{ backgroundImage: `url(${main_secImg3})` }}>
                         <div className="main_sec_cardImgText">
-                            <t3 style={{ padding: "10px 20px" }}>Cloud Native</t3>
+                            <t3 style={{ padding: "10px" }}>Cloud Native</t3>
                             <t4>
                                 애플리케이션 현대화 과정의<br />
                                 필수 기술 학습
                             </t4>
                         </div>
                         <div className="main_sec_cardImgText_hover">
-                            <t3 style={{ padding: "10px 20px" }}>주요 내용</t3>
-                            <t4>비즈니스 애플리케이션 개발/운영의 필수 요소 학습</t4>
-                            <t4>DevOps 도구를 활용하여 지속 가능한 구축</t4>
+                            <t3 style={{ padding: "10px 70px" }}>주요 내용</t3>
+                            <t4 style={{ padding: "0px 70px" }}>비즈니스 애플리케이션 개발/운영의 필수 요소 학습</t4>
+                            <t4 style={{ padding: "0px 70px" }}>DevOps 도구를 활용하여 지속 가능한 구축</t4>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div className="main_thir">
+                <h1>안녕</h1>
+            </div>
         </div>
     );
 }
