@@ -10,7 +10,7 @@ import main_secImg1 from "./asset/img/main_sec1.jpg";
 import main_secImg2 from "./asset/img/main_sec2.jpg";
 import main_secImg3 from "./asset/img/main_sec3.jpg";
 
-import './Main.css';
+import './App.css';
 
 const images = [mainImage1, mainImage2, mainImage3];
 
@@ -82,7 +82,8 @@ function App() {
                         </div>
                         <div className="main_sec_cardImgText_hover">
                             <t3 style={{ padding: "10px 20px" }}>주요 내용</t3>
-                            <t4>내용내용</t4>
+                            <t4>LG CNS의 특화된 AM Agile 문화 학습</t4>
+                            <t4>Communication Skill 향상 및 업무 협업 학습</t4>
                         </div>
                     </div>
                     <div className="main_sec_cardImg" style={{ backgroundImage: `url(${main_secImg2})` }}>
@@ -95,7 +96,8 @@ function App() {
                         </div>
                         <div className="main_sec_cardImgText_hover">
                             <t3 style={{ padding: "10px 20px" }}>주요 내용</t3>
-                            <t4>내용내용</t4>
+                            <t4>현업에서 바로 활용 가능한 프로그래밍 기술 집합</t4>
+                            <t4>사용자 경험(UX)과 인터페이스(UI) 설계 및 구현 방법 학습</t4>
                         </div>
                     </div>
                     <div className="main_sec_cardImg" style={{ backgroundImage: `url(${main_secImg3})` }}>
@@ -108,7 +110,8 @@ function App() {
                         </div>
                         <div className="main_sec_cardImgText_hover">
                             <t3 style={{ padding: "10px 20px" }}>주요 내용</t3>
-                            <t4>내용내용</t4>
+                            <t4>비즈니스 애플리케이션 개발/운영의 필수 요소 학습</t4>
+                            <t4>DevOps 도구를 활용하여 지속 가능한 구축</t4>
                         </div>
                     </div>
                 </div>
