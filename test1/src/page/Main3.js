@@ -1,27 +1,49 @@
+import React, { useState } from 'react';
 import "../css/Main3C.css";
-import roadmapData from "../data/roadmapData.js"
+import roadmapData from "../data/roadmapData";
 
 const Roadmap = ({ roadmap }) => {
+    const [showDetails, setShowDetails] = useState(false);
+
+    const toggleDetails = () => {
+        setShowDetails(!showDetails);
+    };
+
     return (
-        <div className="main_thir_loadmapbox">
-            <t2>{roadmap.title}<br /></t2>
-            <div className="main_thir_loadmap">
+        <div className="container">
+            <div className="main_thir_roadmapbox" onClick={toggleDetails}>
+                <t2>{roadmap.title}<br /></t2>
                 {roadmap.courses.map((course, index) => (
                     <div key={index}>
-                        <t3>{course.title}<br /></t3>
-                        {course.details.map((detail, idx) => (
-                            <t3 key={idx}>{detail}</t3>
-                        ))}
-                        {course.specialLecture && <t4>{course.specialLecture}</t4>}
-                        {course.specialLectureDetails && course.specialLectureDetails.map((detail, idx) => (
-                            <t4 key={idx}>{detail}</t4>
-                        ))}
-                        {course.subDetails && course.subDetails.map((detail, idx) => (
-                            <t4 key={idx}>{detail}</t4>
+                        <t3>{course.title}</t3>
+                        {course.subCourses.map((subCourse, subIndex) => (
+                            <div key={subIndex}>
+                                <t4>{subCourse.subtitle}</t4>
+                            </div>
                         ))}
                     </div>
                 ))}
             </div>
+            {showDetails && (
+                <div className="main_thir_roadmapbox_details">
+                    {roadmap.courses.map((course, index) => (
+                        <div key={index}>
+                            {course.subCourses.map((subCourse, subIndex) => (
+                                <div key={subIndex}>
+                                    <t3 style={{ color: "rgb(15, 63, 15)" }}>{subCourse.subtitle}</t3>
+                                    <t4 style={{ color: "rgb(15, 63, 15)" }}>
+                                        <ul>
+                                            {subCourse.details.map((detail, detailIndex) => (
+                                                <li key={detailIndex}>{detail}</li>
+                                            ))}
+                                        </ul>
+                                    </t4>
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
     );
 };

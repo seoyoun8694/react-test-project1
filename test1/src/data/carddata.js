@@ -6,7 +6,7 @@ const cardData = [
     {
         img: main_secImg1,
         title: "LG CNS Agile",
-        desc: "애플리케이션 현대화를 위한 프로젝트 관리 및 협업 방법",
+        desc: "애플리케이션 현대화를 위한 프로젝트 관리&협업",
         hover: ["LG CNS의 특화된 AM Agile 문화 학습", "Communication Skill 향상 및 업무 협업 학습"],
     },
     {

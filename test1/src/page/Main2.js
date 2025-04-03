@@ -6,11 +6,11 @@ const Card = ({ card }) => {
     return (
         <div className="main_sec_cardImg" style={{ backgroundImage: `url(${card.img})` }}>
             <div className="text-group">
-                <h3>{card.title}</h3>
+                <t3>{card.title}</t3>
                 <p>{card.desc}</p>
             </div>
             <div className="text-group text-hover">
-                <h3>주요 내용</h3>
+                <t3>주요 내용</t3>
                 {card.hover.map((text, idx) => (
                     <p key={idx}>{text}</p>
                 ))}

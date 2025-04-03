@@ -10,11 +10,19 @@
     padding-bottom: 50px;
 }
 
-.main_thir_loadmapbox{
-    width: 70%;
+.main_thir_roadmapbox{
+    width: 60%;
     background-color: rgb(15, 63, 15);
     border-radius: 1vw;
     border-top-left-radius: 5vw;
     border-bottom-right-radius: 5vw;
-    padding: 15px; padding-top: 40px; padding-bottom: 40px;
+    padding: 25px; padding-top: 40px; padding-bottom: 40px;
+    margin: 20px;
+}
+
+.container {
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
 }
