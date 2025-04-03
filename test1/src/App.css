@@ -3,187 +3,37 @@
     margin: 15px;
 }
 
-/* 메인 - 1번째 */
-.main_fir {
-    position: relative;
-    width: 100%;
-    height: 885px;
-}
-
-/* 이미지 관련 스타일 */
-.main_img_div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    border-radius: 1vw;
-    border-top-left-radius: 5vw;
-    border-bottom-right-radius: 5vw;
-    transition: all 1s;
-    z-index: 1;
-}
-.main_img_section {
-    height: 8px;
-    border-radius: 1vw;
-}
-.main_img_bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-    position: absolute;
-    bottom: 5%;
-    z-index: 2;
-}
-.main_img_textbox {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    z-index: 3;
-}
-
-/* 메인 - 2번째 */
-.main_sec {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 1300px;
-    align-items: center;
-    justify-content: center;
-}
-
-/* 하이라이트 텍스트 */
-.highlight-text {
-    position: relative;
-    color: rgb(15, 63, 15);
-}
-.highlight-text::after {
-    content: "";
-    position: absolute;
-    left: -25px;
-    bottom: 10px;
-    width: 71%;
-    height: 30px;
-    background-color: rgba(15, 63, 15, 0.5);
-    z-index: -1;
-    border-radius: 1vw;
-}
-
-/* 카드 */
-.mina_sec_cardbox {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 100px;
-    gap: 20px;
-}
-.main_sec_cardImg {
-    width: 32vw;
-    height: 300px;
-    background-size: cover;
-    border-radius: 1vw;
-    border-top-left-radius: 5vw;
-    border-bottom-right-radius: 5vw;
-    opacity: 0.5;
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    position: relative;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-.main_sec_cardImgText {
-    transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
-    transform: translateY(-10px);
-    padding: 10px;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.main_sec_cardImgText_hover {
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
-    transform: translateY(10px);
-    padding: 10px;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* 카드 호버 효과 */
-.main_sec_cardImg:hover {
-    opacity: 1;
-    width: 45vw;
-    height: 500px;
-}
-.main_sec_cardImg:hover .main_sec_cardImgText_hover {
-    opacity: 1;
-    transform: translateY(40px) scale(1.6);
-    padding: 30px;
-}
-
-.main_sec_cardImg:hover .main_sec_cardImgText {
-    transform: translateY(-40px) scale(1.6);
-    padding: 0px 70px;
-}
-.mina_sec_cardbox:hover .main_sec_cardImg:not(:hover) {
-    width: 25vw;
-}
-
-/* 버튼 스타일 */
-.vnext, .vprev {
-    cursor: pointer;
-    margin: 80px;
-}
-
-/* 텍스트 스타일 */
 t1 {
+    display: flex;
     font-weight: bold;
     font-size: 4rem;
     color: white;
 }
-
 t2 {
+    display: flex;
     font-weight: normal;
     font-size: 2rem;
     color: white;
 }
-
 t3 {
+    display: flex;
     font-weight: normal;
     font-size: 1.5rem;
     color: white;
 }
-
 t4 {
     display: flex;
+    font-weight: normal;
     font-size: 1rem;
     color: white;
-    padding: 10px;
 }
-
 t5 {
+    display: flex;
     font-weight: normal;
     font-size: 1rem;
     color: black;
 }
 
-/* 구분선 스타일 */
 hrr {
     background-color: white;
     opacity: 0.5;

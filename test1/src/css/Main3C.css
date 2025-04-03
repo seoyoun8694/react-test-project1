@@ -1,0 +1,20 @@
+.main_thir {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 63, 15,0.2);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main_thir_loadmapbox{
+    width: 70%;
+    background-color: rgb(15, 63, 15);
+    border-radius: 1vw;
+    border-top-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    padding: 15px; padding-top: 40px; padding-bottom: 40px;
+}

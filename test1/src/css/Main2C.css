@@ -1,0 +1,88 @@
+.main_sec {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-text {
+    position: relative;
+    color: rgb(15, 63, 15);
+}
+.highlight-text::after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    bottom: 10px;
+    width: 71%;
+    height: 30px;
+    background-color: rgba(15, 63, 15, 0.5);
+    z-index: -1;
+    border-radius: 1vw;
+}
+
+.mina_sec_cardbox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 100px;
+    gap: 20px;
+}
+.main_sec_cardImg {
+    width: 32vw;
+    height: 300px;
+    background-size: cover;
+    border-radius: 1vw;
+    border-top-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.text-group {
+    transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    transform: translateY(-10px);
+    padding: 10px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+/* 호버 */
+.text-hover {
+    opacity: 0;
+    align-items: flex-end;
+    transform: translateY(10px);
+}
+.main_sec_cardImg:hover {
+    opacity: 1;
+    width: 45vw;
+    height: 500px;
+}
+.main_sec_cardImg:hover .text-hover {
+    opacity: 1;
+    transform: translateY(60px) scale(1.6);
+    padding: 40px;
+}
+.main_sec_cardImg:hover .text-group:not(.text-hover) {
+    transform: translateY(-60px) scale(1.6);
+    padding: 0px 70px;
+}
+.mina_sec_cardbox:hover .main_sec_cardImg:not(:hover) {
+    width: 25vw;
+}
